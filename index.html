@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom styles -->
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+  </head>
+
+  <body>
+    <!-- Xây dựng phần Banner -->
+    <section id="banner" class="container-fluid">
+      <div class="banner-text text-nowrap text-white text-center">
+        <h1>Nguyễn Minh Tân</h1>
+        <p>Full Stack Developer</p>
+      </div>
+    </section>
+
+    <!-- Xây dựng phần Navbar -->
+    <nav id="nav-bar" class="navbar navbar-expand-md py-0">
+      <div class="container justify-content-center">
+        <ul class="navbar-nav w-100 d-flex justify-content-center">
+          <li class="nav-item fw-semibold border-start border-end py-2 px-3">
+            <a class="nav-link text-dark ps-0" href="#about"
+              ><i class="icon-user"></i>THÔNG TIN</a
+            >
+          </li>
+          <li class="nav-item fw-semibold border-end py-2 px-3">
+            <a class="nav-link text-dark ps-0" href="#job-info"
+              ><i class="icon-doc-text-inv"></i>LÝ LỊCH</a
+            >
+          </li>
+
+          <!-- (Nâng cao) Bổ sung ảnh cá nhân -->
+          <li
+            class="nav-item w-25 d-flex justify-content-center align-items-center"
+          >
+            <img
+              class="rounded-circle border border-white border-1"
+              src="./images/avatar.jpg"
+              alt="avatar"
+            />
+          </li>
+
+          <li class="nav-item fw-semibold border-start py-2 px-3">
+            <a class="nav-link text-dark ps-0" href="#certificate"
+              ><i class="icon-mail-alt"></i>CHỨNG CHỈ</a
+            >
+          </li>
+          <li class="nav-item fw-semibold border-start border-end py-2 px-3">
+            <a class="nav-link text-dark ps-0" href="#project"
+              ><i class="icon-star-1"></i>DỰ ÁN</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Xây dựng phần Thông tin cá nhân -->
+    <section id="about" class="container-fluid">
+      <div class="row">
+        <div id="target" class="col-sm-12 col-md-6 bg-light p-5">
+          <h3 class="mb-4">Mục tiêu nghề nghiệp</h3>
+          <p class="lh-lg">
+            Là một học viên mới của FUNiX, em mong muốn mình sẽ có thể làm tốt
+            các bài tập của FUNiX và hoàn thành khóa học sớm nhất có thể. Em
+            mong muốn sau này em sẽ đỗ các trường Đại Học lớn có ngành CNTT hoặc
+            có thể đi du học nước ngoài.
+          </p>
+        </div>
+
+        <div
+          id="personal-info"
+          class="col-sm-12 col-md-6 bg-secondary bg-opacity-10 p-5"
+        >
+          <h3 class="mb-4">Thông tin cá nhân</h3>
+
+          <form id="formInput">
+            <input
+              type="text"
+              placeholder="Enter email"
+              class="form-control w-50"
+              id="emailInput"
+              required
+            />
+            <p class="form-text" id="alert">Hãy nhập email để xác thực</p>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+          <ul class="list-unstyled lh-lg mb-0 hide" id="personalInfo">
+            <div><b>Ngày sinh: </b>25/09/2008</div>
+            <div><b>Giới tính: </b>Nam</div>
+            <div><b>Điện thoại: </b>(+84) 867472008</div>
+            <div><b>Email: </b>tannmfx29444@funix.edu.vn</div>
+            <div><b>Địa chỉ: </b>Hòa Bình, Việt Nam</div>
+            <div><b>wedsite: </b>http://abc.tech</div>
+            <li class="pb-3">
+              <strong>Website</strong> :
+              <a href="https://www.linkedin.com/in/thangda" target="_blank"
+                >linkedin.com/in/thangda/</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-decoration-none me-2"
+                ><i class="icon-twitter"></i
+              ></a>
+              <a href="" class="text-decoration-none me-2"
+                ><i class="icon-facebook"></i
+              ></a>
+              <a href="" class="text-decoration-none me-2"
+                ><i class="icon-gplus"></i
+              ></a>
+              <a href="" class="text-decoration-none me-2"
+                ><i class="icon-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Xây dựng phần Thông tin nghề nghiệp -->
+    <section id="job-info" class="container my-5">
+      <div class="row">
+        <div class="col-md-6 col-lg-12">
+          <div class="row">
+            <!-- Xây dựng phần Kinh nghiệm -->
+            <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+              <div class="sub-job-info experience">
+                <h3 class="mx-4 mt-5 mb-3">Kinh nghiệm</h3>
+                <i class="ic-toolbox job-info-icon fs-1"></i>
+                <div style="height: 3.5rem">
+                  <button
+                    class="btn btn-warning btn-sm rounded-4 fw-bold w-fit h-fit ms-4 px-4 hide btn-view"
+                  >
+                    ▼ VIEW MORE
+                  </button>
+                </div>
+                <ul class="job-info list-unstyled px-5 mb-0 hide">
+                  <li>
+                    <p class="mb-2">CLB Tin học</p>
+                    <p class="fs-7 mb-1">Học viên</p>
+                    <p class="time">
+                      <em
+                        >09/2021 -
+                        <span
+                          style="
+                            color: #fff;
+                            background-color: #005eff;
+                            width: 100%;
+                            border-radius: 10%;
+                          "
+                        >
+                          Hiện tại
+                        </span></em
+                      >
+                    </p>
+                    <p class="job-info-text">
+                      - Giải mã các thuật toán của các đề thi HSG môn Tin
+                      học.<br />
+                      - Phân tích đề và quản lý dữ liệu. <br />
+                      - Sử dụng ngôn ngữ lập trình(Pascal, C++,...) để giải các
+                      bài toán
+                    </p>
+                  </li>
+                  <li>
+                    <p class="mb-2">FUNIX</p>
+                    <p class="fs-7 mb-1">Học viên</p>
+                    <p class="time"><em>08/2023 - <span style="
+                      color: #fff;
+                      background-color: #005eff;
+                      width: 100%;
+                      border-radius: 10%;
+                    ">
+                      Hiện tại</em></p>
+                    <p class="job-info-text">
+                      - Đang tích lũy kinh nghiệm thông qua các môn học web, funix, ...
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+             <!-- Xây dựng phần Học vấn -->
+             <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+              <div class="sub-job-info education">
+                <h3 class="mx-4 mt-5 mb-3">Học vấn</h3>
+                <!-- <i class="ic-pencil job-info-icon fs-1"></i> -->
+                <i class="ic-pencil  job-info-icon fs-1"></i>
+                <div style="height: 3.5rem">
+                  <button
+                    class="btn btn-warning btn-sm rounded-4 fw-bold w-fit h-fit ms-4 px-4 hide btn-view"
+                  >
+                    ▼ VIEW MORE
+                  </button>
+                </div>
+                <ul class="job-info list-unstyled px-5 mb-0 hide">
+                  <li>
+                    <p class="mb-2">FUNiX</p>
+                    <p class="time"><em>08/2023 - <span style=" color: #fff;
+                      background-color: #005eff;
+                      width: 100%;
+                      border-radius: 10%;">
+                      Hiện tại
+                    </span></em></p>
+                    <p class="job-info-text">
+                      - Đang học môn WEB101x
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Xây dựng phần Hoạt động -->
+            <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+              <div class="sub-job-info activity">
+                <h3 class="mx-4 mt-5 mb-3">Hoạt động</h3>
+                <i class="ic-toolbox fa-people-group job-info-icon fs-1"></i>
+                <div style="height: 3.5rem">
+                  <button
+                    class="btn btn-warning btn-sm rounded-4 fw-bold w-fit h-fit ms-4 px-4 hide btn-view"
+                  >
+                    ▼ VIEW MORE
+                  </button>
+                </div>
+                <ul class="job-info list-unstyled px-5 mb-0 hide">
+                  <li>
+                    <p class="mb-2">Câu lạc bộ Tin học</p>
+                    <p class="time"><em>09/2021 - 03/2022</em></p>
+                    <p class="job-info-text">- Giải Khuyến Khích cấp huyện</p>
+                  </li>
+                  <li>
+                    <p class="mb-2">Câu lạc bộ Tin học</p>
+                    <p class="time"><em>08/2016 - 08/2017</em></p>
+                    <p class="job-info-text">
+                      - Giải Ba kỳ thi chọn học sinh giỏi cấp tỉnh
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+               <!-- Xây dựng phần Sở thích -->
+               <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+                <div class="sub-job-info hobby">
+                  <h3 class="mx-4 mt-5 mb-3">Sở thích</h3>
+                  <i class="ic-telescope job-info-icon fs-1"></i>
+                  <div style="height: 3.5rem">
+                    <button
+                      class="btn btn-warning btn-sm rounded-4 fw-bold w-fit h-fit ms-4 px-4 hide btn-view"
+                    >
+                      ▼ VIEW MORE
+                    </button>
+                  </div>
+                  <div
+                    class="row job-info grid-hobby px-4 pb-4 hide"
+                    style="row-gap: 1rem"
+                  >
+                    <div
+                      class="col-lg-3 col-md-4 col-sm-3 col-3 d-flex flex-column align-items-center text-center"
+                    >
+                      <i class="fa-solid icon-star-1 rounded-circle fs-4 px-0"></i>
+                      <p class="px-0 pt-2">Đá bóng</p>
+                    </div>
+  
+                    <div
+                      class="col-lg-3 col-md-4 col-sm-3 col-3 d-flex flex-column align-items-center text-center"
+                    >
+                      <i class="fa-solid ic-strategy rounded-circle fs-4 px-0"></i>
+                      <p class="px-0 pt-2">Chơi game</p>
+                    </div>
+  
+                    <div
+                      class="col-lg-3 col-md-4 col-sm-3 col-3 d-flex flex-column align-items-center text-center"
+                    >
+                      <i
+                        class="fa-solid ic-hotairballoon rounded-circle fs-4 px-0"
+                      ></i>
+                      <p class="px-0 pt-2">Du lịch</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- Xây dựng phần Ngôn ngữ -->
+            <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+              <div class="sub-job-info language">
+                <h3 class="mx-4 mt-5 mb-3">Ngôn ngữ</h3>
+                <!-- <i class="ic-mic job-info-icon fs-1"></i> -->
+                <i class="ic-mic job-info-icon fs-1"></i>
+                <div style="height: 3.5rem">
+                  <button
+                    class="btn btn-warning btn-sm rounded-4 fw-bold w-fit h-fit ms-4 px-4 hide btn-view"
+                  >
+                    ▼ VIEW MORE
+                  </button>
+                </div>
+                <div class="job-info skill-language ps-5 pe-4 hide">
+                  <p>Tiếng Anh: IELTS 5.0</p>
+                  <div>
+                    <span></span> <span></span>
+                    <span class="grey-line"></span>
+                  </div>
+                  <p>Tiếng Trung: TOCFL</p>
+                  <div>
+                    <span></span> <span></span>
+                    <span class="grey-line"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Xây dựng phần Kỹ năng -->
+            <div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+              <div class="sub-job-info skill">
+                <h3 class="mx-4 mt-5 mb-3">Kỹ năng</h3>
+                <i class="ic-tools-2 job-info-icon fs-1"></i>
+                <div style="height: 3.5rem">
+                  <button
+                    class="btn btn-warning btn-sm rounded-4 fw-bold w-fit h-fit ms-4 px-4 hide btn-view"
+                  >
+                    ▼ VIEW MORE
+                  </button>
+                </div>
+                <div class="job-info skill-language ps-5 pe-4 hide">
+                  <p>HTML/CSS: Intermediate</p>
+                  <div>
+                    <span></span>
+                    <span class="grey-line"></span>
+                    <span class="grey-line"></span>
+                  </div>
+                  <p>C++: Intermediate</p>
+                  <div>
+                    <<span></span>
+                    <span class="grey-line"></span>
+                    <span class="grey-line"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Xây dựng phần Chứng chỉ - Giải thưởng -->
+    <section id="certificate" class="bg-light">
+      <div class="container pt-5">
+        <h3 class="mb-0">Chứng chỉ - Giải thưởng</h3>
+
+        <div class="row border-bottom border-warning">
+          <div
+            class="col-sm-12 col-md-6 col-lg-6 border-end border-warning my-5 sub-cert"
+          >
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <img
+                  src="./images/cn 2022.jpg"
+                  alt="chung-chi" 
+                  width="250px"
+                />
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <h6 class="fw-bold mb-3">ĐẠT GIẢI KHUYẾN KHÍCH KỲ THI HỌC SINH GIỎI CẤP HUYỆN MÔN TIN HỌC NĂM HỌC 2021-2022</h6>
+                <p class="text-secondary mb-0">
+                  - Chứng chỉ ngôn ngữ lập trình Pascal</br>
+                  - GPA: 8.6
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-6 py-5">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <img
+                  src="./images/cn 2023.jpg"
+                  alt="chung-chi" 
+                  width="250px"
+                />
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <h6 class="fw-bold mb-3">
+                  ĐẠT GIẢI BA KỲ THI HỌC SINH GIỎI CẤP TỈNH MÔN TIN HỌC NĂM HỌC 2022-2023
+                </h6>
+                <p class="text-secondary mb-0">
+                  - Chứng chỉ ngôn ngữ lập trình C++</br>
+                  - GPA: 8.6
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div
+            class="col-sm-12 col-md-6 col-lg-6 border-end border-warning my-5 sub-cert"
+          >
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <img
+                src="./images/cn 2023.jpg"
+                alt="chung-chi" 
+                width="250px"
+                />
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <h6 class="fw-bold mb-3">
+                  ĐẠT GIẢI BA KỲ THI HỌC SINH GIỎI CẤP TỈNH MÔN TIN HỌC NĂM HỌC 2022-2023
+                </h6>
+                <p class="text-secondary mb-0">
+                  - Chứng chỉ ngôn ngữ lập trình C++</br>
+                  - GPA: 8.6
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Xây dựng phần Dự án -->
+    <section id="project" class="container mt-5">
+      <h3 class="mb-4">Dự án</h3>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-4 mb-5">
+          <div class="h-100 border border-top-0">
+            <a
+              href="pc-ecommerce.html"
+              target="_blank"
+              class="text-decoration-none border-white"
+            >
+            <img src="images/banhang.jpg" alt="banhang">
+            </a>
+
+            <div class="border-top project">
+              <a
+                href="https://minhtanfx29444.github.io/web-ban-hang/"
+                target="_blank"
+                class="d-block text-decoration-none text-center fw-bold cursor-pointer p-3"
+                >TRANG WED BÁN HÀNG
+              </a>
+              <div class="project-brief border-top border-bottom">
+                <span class="year d-inline-block text-white py-2 px-3 m-3"
+                  >2022</span
+                >
+                <span class="project-icon">
+                  <i class="icon-user-1">&nbsp;FUNiX</i>
+                  <i class="icon-lamp">&nbsp;Developer</i>
+                </span>
+              </div>
+              <table>
+                <tr class="border-bottom">
+                  <td>Mô tả</td>
+                  <td>
+                    Ứng dụng giúp khách hàng mua hàng thuận lợi hơn: không lo mưa nắng, không tốn
+                    tiền đi lại, ....
+                  </td>
+                </tr>
+                <tr class="border-bottom">
+                  <td>Nhiệm vụ</td>
+                  <td>
+                    Phát triển, tối ưu code và xử lý lỗi
+                  </td>
+                </tr>
+                <tr>
+                  <td>Công nghệ</td>
+                  <td>HTML, CSS.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 mb-5">
+          <div class="h-100 border border-top-0">
+            <a
+              href="pc-booking.html"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <img src="images/tintuc.jpg" alt="tintuc">
+            </a>
+            <div class="border-top project">
+              <a
+                href="https://minhtanfx29444.github.io/web-tin-tuc/"
+                target="_blank"
+                class="d-block text-decoration-none text-center fw-bold cursor-pointer p-3"
+                >TRANG WED XEM TIN TỨC
+              </a>
+              <div class="project-brief border-top border-bottom">
+                <span class="year d-inline-block text-white py-2 px-3 m-3"
+                  >2021</span
+                >
+                <span class="project-icon">
+                  <i class="icon-user-1">&nbsp;FUNiX</i>
+                  <i class="icon-lamp">&nbsp;Developer</i>
+                </span>
+              </div>
+              <table>
+                <tr class="border-bottom">
+                  <td>Mô tả</td>
+                  <td>
+                    Trang Web xem tin tức từ nhiều nguồn khác nhau, người dùng có thể tìm kiếm các tin tức dựa theo các
+                    từ khóa.
+                  </td>
+                </tr>
+                <tr class="border-bottom">
+                  <td>Nhiệm vụ</td>
+                  <td>
+                    Phát triển, tối ưu code và xử lý lỗi
+                  </td>
+                </tr>
+                <tr>
+                  <td>Công nghệ</td>
+                  <td>HTML, CSS.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 mb-5">
+          <div class="h-100 border border-top-0">
+            <a
+              href="pc-movie.html"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <img src="images/cvcanhan.jpg" alt="cv-ca-nhan">
+            </a>
+            <div class="border-top project">
+              <a
+                href="https://minhtanfx29444.github.io/cv-ca-nhan/"
+                target="_blank"
+                class="d-block text-decoration-none text-center fw-bold cursor-pointer p-3"
+                >CV CÁ NHÂN
+              </a>
+              <div class="project-brief border-top border-bottom">
+                <span class="year d-inline-block text-white py-2 px-3 m-3"
+                  >2021</span
+                >
+                <span class="project-icon">
+                  <i class="icon-user-1">&nbsp;FUNiX</i>
+                  <i class="icon-lamp">&nbsp;Developer</i>
+                </span>
+              </div>
+              <table>
+                <tr class="border-bottom">
+                  <td>Mô tả</td>
+                  <td>
+                    Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp.
+                  </td>
+                </tr>
+                <tr class="border-bottom">
+                  <td>Nhiệm vụ</td>
+                  <td>
+                    Phát triển, tối ưu code và xử lý lỗi
+                  </td>
+                </tr>
+                <tr>
+                  <td>Công nghệ</td>
+                  <td>HTML, CSS.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Xây dựng phần Liên hệ -->
+    <footer
+      id="footer"
+      class="container-fluid bg-light d-flex justify-content-center py-5"
+    >
+      <a href="https://www.facebook.com/profile.php?id=61550585391067" target="_blank" class="text-decoration-none text-secondary">
+        <i class="icon-facebook-circled fs-1 align-middle"></i>
+        <span>Facebook</span>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/thangda"
+        target="_blank"
+        class="text-decoration-none text-secondary mx-5"
+      >
+        <i class="icon-linkedin-circled fs-1 align-middle"></i>
+        <span>Linkedin</span>
+      </a>
+      <a
+        href="https://github.com/DoAnhThang"
+        target="_blank"
+        class="text-decoration-none text-secondary"
+      >
+        <i class="icon-github-circled fs-1 align-middle"></i>
+        <span>Github</span>
+      </a>
+    </footer>
+
+    <div
+      id="backdrop"
+      class="container-fluid vh-100 position-fixed top-0 start-0 hide"
+      style="z-index: 100; background: rgba(0, 0, 0, 0.75)"
+      onclick="handleClickBackdrop()"
+    ></div>
+    <div
+      id="overlay"
+      class="h-75 position-fixed top-50 start-50 hide"
+      style="z-index: 200; transform: translate(-50%, -50%); min-width: 576px"
+    ></div>
+
+    <!-- JavaScript Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
